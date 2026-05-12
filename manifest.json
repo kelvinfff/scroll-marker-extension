@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "ScrollMarker",
+  "version": "1.0",
+  "description": "Automatically remembers and restores your scroll position on every webpage.",
+  "permissions": ["storage"],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content.js"],
+    "run_at": "document_idle"
+  }]
+}
